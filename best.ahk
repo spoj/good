@@ -45,10 +45,21 @@ SendInput /hfm!cacc!d0!s{Home}{Enter}{Enter}
 return
 
 ;- Ctrl-Win-F -> highlight formula (orange)
-#^f::SendInput /hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
+!*f::SendInput /hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
 ;- Ctrl-Win-C -> highlight constants
-#^c::SendInput /hfhdsoxg{Enter}/hh{left}{left}{down}{Enter}^{home}
+!*c::SendInput /hfhdsoxg{Enter}/hh{left}{left}{down}{Enter}^{home}
 ;- Ctrl-Win-B -> highlight both
-#^b::Sendinput /hfhdsoxg{Enter}/hh{left}{left}{down}{Enter}^{home}/hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
+!*b::Sendinput /hfhdsoxg{Enter}/hh{left}{left}{down}{Enter}^{home}/hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
 ;- Ctrl-Win-U -> unhighlight everything
-#^u::SendInput ^a^a^a/hhn^{home}
+!*u::SendInput ^a^a^a/hhn^{home}
+
+;- Ctrl-Win-9 -> no
+!*9::SendInput /hhn
+;- Ctrl-Win-8 -> green
+!*8::SendInput /hh{Up}{Up}{Up}{Left}{Enter}
+;- Ctrl-Win-7 -> yellow
+!*7::SendInput /hh{Up}{Up}{Up}{Left}{Left}{Enter}
+;- Ctrl-Win-6 -> orange
+!*6::SendInput /hh{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
+;- Ctrl-Win-0 -> white
+!*0::SendInput /hh{Enter}
