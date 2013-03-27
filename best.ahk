@@ -13,6 +13,12 @@
 PrintScreen::AppsKey
 ^PrintScreen::PrintScreen
 
+;- Alt-Shift-; -> date
+!+;::
+FormatTime, d,, yyyyMMdd-HHmm
+Send %d%
+Return
+
 ;- *** for use with excel.
 #IfWinActive, Microsoft Excel
 ;- 
