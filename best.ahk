@@ -63,3 +63,14 @@ return
 !*6::SendInput /hh{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
 ;- Ctrl-Win-0 -> white
 !*0::SendInput /hh{Enter}
+
+;- Ctrl-Win-F9 -> no
+!*F9::SendInput /hotn
+;- Ctrl-Win-F8 -> green
+!*F8::SendInput /hot{Up}{Up}{Up}{Left}{Enter}
+;- Ctrl-Win-F7 -> yellow
+!*F7::SendInput /hot{Up}{Up}{Up}{Left}{Left}{Enter}
+;- Ctrl-Win-F6 -> orange
+!*F6::SendInput /hot{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
+;- Ctrl-Win-F0 -> white
+!*F10::SendInput /hot{Enter}
