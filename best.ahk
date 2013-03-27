@@ -2,6 +2,12 @@
 ; + = shift
 ; ! = Alt
 
+;- *** general shortcuts.
+
+;- PrintScreen mapped to context menu key for T430s. Printscreen can be accessed by Ctrl-Prtscr
+PrintScreen::AppsKey
+^PrintScreen::PrintScreen
+
 ;- *** for use with excel.
 #IfWinActive, Microsoft Excel
 ;- 
