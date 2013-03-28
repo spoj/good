@@ -168,7 +168,7 @@ tabcompletion =yes
 ; set this to yes to enable digit shortcuts when there are ten or
 ; less items in the list
 ; ???????????
-digitshortcuts =yes
+digitshortcuts =
 
 ; set this to yes to enable first letter match mode where the typed
 ; search string must match the first letter of words in the
