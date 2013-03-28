@@ -741,7 +741,7 @@ if( ( ! DllCall( "GetWindow", "uint", wid, "uint", GW_OWNER ) and  ! ( es & WS_E
                  ; Add the HICON directly to the small-icon and large-icon lists.
                  ; Below uses +1 to convert the returned index from zero-based to one-based:
                  IconNumber := DllCall("ImageList_ReplaceIcon", UInt, ImageListID1, Int, -1, UInt, h_icon) + 1
-                 LV_Add("Icon" . IconNumber, a_index-empty,ele, getProcessName(wid)) ; spaces added for layout
+                 LV_Add("Icon" . IconNumber, "",ele, getProcessName(wid)) ; spaces added for layout
                }else{
                empty +=1
                }
@@ -753,7 +753,7 @@ if( ( ! DllCall( "GetWindow", "uint", wid, "uint", GW_OWNER ) and  ! ( es & WS_E
                  iconIdArray.Insert(wid)
                  iconIdNum+=1
                  IconNumber := IL_Add(ImageListID1, "C:\WINDOWS\system32\shell32.dll" , 217) ; generic control panel icon
-                 LV_Add("Icon" . IconNumber,a_index-empty ,ele,getProcessName(wid))
+                 LV_Add("Icon" . IconNumber, "",ele,getProcessName(wid))
               }else{
                    empty +=1
               }
