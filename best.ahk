@@ -6,7 +6,7 @@
 ;- *** general shortcuts.
 ;- ***
 
-#include iswitchw.ahk
+#include iswitchw-plus.ahk
 
 ;- PrintScreen -> Context menu
 ;- Ctrl - PrtScr -> really print screen
@@ -77,6 +77,12 @@ return
 ;- Shift-Alt-0 -> cell white
 !+0::Send /hh{Enter}
 
+;- Shift-Alt-- -> tab 0.5 width
+!+-::Send /how0.5{Enter}
+
+;- Shift-Alt-+ -> tab 13 width
+!++::Send /how13{Enter}
+
 ;- Shift-Alt-F9 -> tab no color
 !+F9::Send /hotn
 ;- Shift-Alt-F8 -> tab green
@@ -87,3 +93,4 @@ return
 !+F6::Send /hot{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
 ;- Shift-Alt-F0 -> tab white
 !+F10::Send /hot{Enter}
+
