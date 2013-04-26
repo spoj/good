@@ -7,6 +7,7 @@
 ;- ***
 
 #include iswitchw-plus.ahk
+#include fakenum.ahk
 
 ;- PrintScreen -> Context menu
 ;- Ctrl - PrtScr -> really print screen
