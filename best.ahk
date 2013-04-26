@@ -5,13 +5,13 @@
 ;- ***
 ;- *** general shortcuts.
 ;- ***
+#IfWinActive,
 
 #include iswitchw-plus.ahk
 
 ;- PrintScreen -> Context menu
 ;- Ctrl - PrtScr -> really print screen
-PrintScreen::AppsKey
-^PrintScreen::PrintScreen
+RAlt::AppsKey
 
 ;- Alt-Shift-; -> date
 !+;::
@@ -55,7 +55,7 @@ F3::
 Send /hfm!cacc!d0!s{Home}{Enter}{Enter}
 return
 
-!+v::Send ^c^!vv{Enter}{Esc}
+!+v::Send ^c/hvsv{Enter}{Esc}
 
 ;- Shift-Alt-F -> highlight formula (orange)
 !+f::Send /hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
@@ -66,14 +66,14 @@ return
 ;- Shift-Alt-U -> unhighlight everything
 !+u::Send ^a^a^a/hhn^{home}
 
-;- Shift-Alt-9 -> cell no color
-!+9::Send /hhn
-;- Shift-Alt-8 -> cell green
-!+8::Send /hh{Up}{Up}{Up}{Left}{Enter}
-;- Shift-Alt-7 -> cell yellow
-!+7::Send /hh{Up}{Up}{Up}{Left}{Left}{Enter}
-;- Shift-Alt-6 -> cell orange
-!+6::Send /hh{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
+;- Shift-Alt-4 -> cell no color
+!+4::Send /hhn
+;- Shift-Alt-3 -> cell green
+!+3::Send /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Right}{Enter}
+;- Shift-Alt-2 -> cell yellow
+!+2::Send /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Enter}
+;- Shift-Alt-1 -> cell orange
+!+1::Send /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Enter}
 ;- Shift-Alt-0 -> cell white
 !+0::Send /hh{Enter}
 
@@ -83,14 +83,14 @@ return
 ;- Shift-Alt-+ -> tab 13 width
 !++::Send /how13{Enter}
 
-;- Shift-Alt-F9 -> tab no color
-!+F9::Send /hotn
-;- Shift-Alt-F8 -> tab green
-!+F8::Send /hot{Up}{Up}{Up}{Left}{Enter}
-;- Shift-Alt-F7 -> tab yellow
-!+F7::Send /hot{Up}{Up}{Up}{Left}{Left}{Enter}
-;- Shift-Alt-F6 -> tab orange
-!+F6::Send /hot{Up}{Up}{Up}{Left}{Left}{Left}{Enter}
-;- Shift-Alt-F0 -> tab white
+;- Shift-Alt-F4 -> tab no color
+!+F4::Send /hotn
+;- Shift-Alt-F3 -> tab green
+!+F3::Send /hot{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Right}{Enter}
+;- Shift-Alt-F2 -> tab yellow
+!+F2::Send /hot{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Enter}
+;- Shift-Alt-F1 -> tab orange
+!+F1::Send /hot{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Enter}
+;- Shift-Alt-F10 -> tab white
 !+F10::Send /hot{Enter}
 
