@@ -27,7 +27,6 @@ SC019::NumpadMult
 SC01A::NumpadDiv
 SC033::,
 SC034::NumpadDot
-0::Backspace
 #IfWinExist,
 #IfWinActive, Excalibur
 SC032::Numpad0
@@ -47,6 +46,5 @@ SC019::NumpadMult
 SC01A::NumpadDiv
 SC033::,
 SC034::NumpadDot
-0::Backspace
 #IfWinActive,
 #UseHook Off
