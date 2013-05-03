@@ -5,7 +5,6 @@
 ;- ***
 ;- *** general shortcuts.
 ;- ***
-#IfWinActive,
 
 #include iswitchw-plus.ahk
 
@@ -55,7 +54,12 @@ F3::
 SendInput /hfm!cacc!d0!s{Home}{Enter}{Enter}
 return
 
-!+v::SendInput ^c/hvsv{Enter}{Esc}
+!+v::
+KeyWait Alt
+KeyWait Shift
+KeyWait v
+SendInput ^c/hvsv{Enter}{Esc}
+return
 
 ;- Shift-Alt-F -> highlight formula (orange)
 !+f::SendInput /hfhdsfxg{Enter}/hh{left}{down}{Enter}^{home}
@@ -93,4 +97,3 @@ return
 !+F1::SendInput /hot{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Enter}
 ;- Shift-Alt-F10 -> tab white
 !+F10::SendInput /hot{Enter}
-
