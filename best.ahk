@@ -17,7 +17,9 @@ FormatTime, d,, yyyyMMdd-HHmm
 SendInput %d%
 Return
 
+;- *** 
 ;- *** for use with excel.
+;- *** 
 #IfWinActive, Microsoft Excel
 ;- 
 ;- * copy and paste functions
