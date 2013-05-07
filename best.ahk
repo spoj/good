@@ -9,8 +9,7 @@
 #include iswitchw-plus.ahk
 #include fakenum.ahk
 
-;- PrintScreen -> Context menu
-;- Ctrl - PrtScr -> really print screen
+;- RightAlt -> Context menu (for Lenovo's lack of context menu key)
 RAlt::AppsKey
 
 ;- Alt-Shift-; -> date
