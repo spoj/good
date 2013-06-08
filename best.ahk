@@ -8,9 +8,6 @@
 
 #include iswitchw-plus.ahk
 
-;- RightAlt -> Context menu (for Lenovo's lack of context menu key)
-RAlt::AppsKey
-
 ;- Alt-Shift-; -> date
 !+;::
 FormatTime, d,, yyyyMMdd-HHmm
