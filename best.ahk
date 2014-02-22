@@ -49,7 +49,7 @@ WheelRight::SendInput ^{PgDn}
 ;- * highlight functions
 ;- F3 -> format the selected cells as accounting format
 F3::
-SendInput /hfm!cacc!d0!s{Home}{Enter}{Enter}
+SendInput ^1n!cacc!d0!s{Home}{Enter}{Enter}
 return
 
 !+v::
@@ -69,15 +69,13 @@ return
 !+u::SendInput ^a^a^a/hhn^{home}
 
 ;- Shift-Alt-4 -> cell no color
-!+4::SendInput /hhn
+!+4::SendInput ^1b^{PgDn}{Tab}{Enter}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
 ;- Shift-Alt-3 -> cell green
-!+3::SendInput /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Right}{Enter}
+!+3::SendInput ^1b^{PgDn}{Tab}{Tab}{Up}{Up}{Right}{Right}{Right}{Right}{Enter}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
 ;- Shift-Alt-2 -> cell yellow
-!+2::SendInput /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Enter}
+!+2::SendInput ^1b^{PgDn}{Tab}{Tab}{Up}{Up}{Right}{Right}{Right}{Enter}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
 ;- Shift-Alt-1 -> cell orange
-!+1::SendInput /hh{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Enter}
-;- Shift-Alt-0 -> cell white
-!+0::SendInput /hh{Enter}
+!+1::SendInput ^1b^{PgDn}{Tab}{Tab}{Up}{Up}{Right}{Right}{Enter}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
 
 ;- Shift-Alt-- -> tab 0.5 width
 !+-::SendInput /how0.5{Enter}
