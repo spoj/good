@@ -45,7 +45,15 @@ WheelRight::SendInput ^{PgDn}
 +WheelRight::SendInput ^+{PgDn}
 
 
-;- 
+;-
+;- * highlight functions
+;- F5 -> format as merged text
+F5::
+KeyWait F5
+SendInput /hmu^1a!m!hj{Enter}!v{Home}{Enter}{Enter}
+return
+
+;-
 ;- * highlight functions
 ;- F3 -> format the selected cells as accounting format
 F3::
